@@ -1,0 +1,232 @@
+.corpo {
+  background-color: #f3f5fc;
+}
+
+.logo {
+  margin: 40px 85px 0;
+}
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+.texto-area {
+  display: inline;
+  text-align: center;
+}
+#area_texto {
+  width: 700px;
+  height: 450px;
+  resize: none;
+  padding: 30px;
+  border: none;
+  font-size: 30px;
+  font-family: roboto;
+  color: #0a3871;
+  background-color: #f3f5fc;
+  font-family: sans-serif;
+}
+#area_texto::placeholder {
+  color: #0a3871;
+}
+#area_texto:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+.alerta {
+  margin-top: 10px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #65778d;
+}
+.criptografar {
+  font-size: 20px;
+  margin: 20px;
+  padding: 10px 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 0 0;
+  border: none;
+  background-color: #0a3871;
+  color: #f3f5fc;
+}
+.criptografar:active {
+  background-color: #03254e;
+}
+
+.descriptografar {
+  font-size: 20px;
+  text-align: center;
+  margin: 20px;
+  padding: 10px 23px;
+  border-radius: 15px;
+  box-shadow: 0 0 0 0;
+  border: #0a3871 solid 1px;
+  background-color: #f3f5fc;
+  color: #0a3871;
+}
+.descriptografar:active {
+  background-color: #cbd4df;
+}
+
+.resultado-area {
+  box-sizing: border-box;
+  width: 300px;
+  height: 670px;
+  padding: 30px 20px 0 20px;
+  background-color: #fbfaff;
+  border-radius: 15px;
+  position: relative;
+  top: -50px;
+  display: inline-block;
+  font-size: 28px;
+  color: #03254e;
+  font-family: sans-serif;
+  text-align: center;
+  filter: drop-shadow(0px 10px 5px rgb(226, 226, 233));
+}
+.resultado {
+  overflow-wrap: break-word;
+  width: 250px;
+  height: 570px;
+  border-radius: 15px;
+  display: inline-block;
+  font-size: 28px;
+  color: #03254e;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.semimagem {
+  margin-top: 120px;
+  width: 250px;
+}
+.titulo-semimg {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 25px;
+  color: #021935;
+}
+.resumo-semimg {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #304d70;
+}
+
+.botao-copiar {
+  position: relative;
+  background-color: #fbfaff;
+  border: #0a3871 solid 1px;
+  color: #0a3871;
+  border-radius: 15px;
+  font-size: 20px;
+  padding: 10px 80px;
+  margin: 10px;
+  transition: background-color 0.6s ease;
+}
+.verde {
+  background-color: #18ad20;
+  border: #18ad20 solid 1px;
+  border: none;
+  color: #e8f8e8;
+  padding: 10px 72px;
+  transition: background-color 0.6s ease;
+}
+.botao-copiar:active {
+  background-color: #e1e5eb;
+}
+
+footer {
+  height: 200px;
+  max-height: 100vh;
+  background-color: #03254e;
+}
+.div-footer {
+  color: #e3ecf7;
+  text-align: center;
+}
+
+.p1 {
+  padding-top: 10px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.p2 {
+  padding-top: 75px;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*---------------Media Query--------------------------*/
+
+@media (min-width: 650px) and (max-width: 1080px) {
+  .main {
+    display: grid;
+    align-items: center;
+  }
+
+  #area_texto {
+    width: 550px;
+  }
+  .semImagem {
+    margin: 0 0 20px 0;
+  }
+  .semimagem {
+    display: none;
+  }
+  .resultado-area {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: auto auto;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+  }
+  .resultado {
+    display: block;
+    width: 450px;
+    height: auto;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 649px) {
+  .main {
+    display: block;
+    align-items: center;
+  }
+  .semImagem {
+    margin-bottom: 50px;
+  }
+  .semimagem {
+    display: none;
+  }
+  #area_texto {
+    width: auto;
+  }
+
+  .area_texto {
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .resultado-area {
+    position: static;
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    margin: auto auto;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+  }
+  .resultado {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+  .botao-area {
+    display: block;
+    width: auto;
+  }
+}

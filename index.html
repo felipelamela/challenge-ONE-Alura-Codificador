@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decodificador</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="corpo">
+  <header class="logo">
+    <h1><img src="Vectoraluralogo.png" alt=""></h1>
+  </header>
+  <main class="main">
+    <div class="texto-area">
+      <div>
+        <label for="area_texto"></label>
+        <textarea name="area_texto" id="area_texto" class="area_texto" cols="30" rows="10"
+          placeholder="Digite sua mensagem"></textarea>
+      </div>
+      <p class="alerta"> &#9888; Apenas letras minúsculas e sem acento.</p>
+      <div class="botao_area">
+        <label for="criptografar"></label>
+        <button name="criptografar" id="criptografar" class="criptografar">Criptografar</button>
+
+        <label for="descriptografar"></label>
+        <button name="descriptografar" id="descriptografar" class="descriptografar">Descriptografar</button>
+      </div>
+    </div>
+
+    <div class="resultado-area" id="resultado-area">
+      <div class="semImagem" id="semImagem">
+        <img src="semimagem.png" alt="" class="semimagem">
+        <p class="titulo-semimg">Nenhuma mensagem encontrada</p>
+        <p class="resumo-semimg">Digite um texto que você deseja criptografar ou descriptografar</p>
+      </div>
+      <p class="resultado" id="resultado"></p>
+
+      <label for="botao-copiar"></label>
+      <button name="botao-copiar" id="botao-copiar" class="botao-copiar">Copiar</button>
+    </div>
+  </main>
+
+  <footer>
+    <div class="div-footer">
+
+      <p class="p2">Challenge - Oracle ONE & Alura</p>
+      <p class="p1">Desenvolvido por Felipe Lamela</p>
+    </div>
+  </footer>
+  <script src="desafio.js"></script>
+  <script src="teste.js"></script>
+</body>
+
+</html>
